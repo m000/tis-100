@@ -1,0 +1,45 @@
+@0
+
+
+@1
+MOV UP, RIGHT
+SUB RIGHT
+JGZ _POS
+NEG
+_POS:
+SUB 10
+JLZ _0
+MOV 1, RIGHT
+JRO 3
+_0:
+MOV 0, RIGHT
+MOV RIGHT, ACC
+
+@2
+MOV LEFT, ACC
+MOV ACC, LEFT
+MOV LEFT, DOWN
+MOV ACC, LEFT
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP, DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP, DOWN
+
+@10
