@@ -1,0 +1,46 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV ACC, DOWN
+ADD 1
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV 0, DOWN
+MOV UP, DOWN
+JEZ EVNR
+MOV 0, DOWN
+EVNR: ADD 30
+LOOP: SUB 2
+      JLZ ODDR
+      MOV 3, DOWN
+      MOV 0, DOWN
+      JGZ LOOP
+ADD -1
+JMP END
+ODDR: MOV 3, DOWN
+      ADD 1
+END: MOV -1, DOWN
+
+@10
